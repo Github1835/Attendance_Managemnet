@@ -38,5 +38,3 @@ An efficient and mobile-friendly **Attendance Management System** built using **
 - **Charts/Graphs**: Chart.js (or relevant charting library if used)
 
 ---
-
-## 📁 Folder Structure
