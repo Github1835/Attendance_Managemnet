@@ -1,0 +1,25 @@
+body{
+    background-image: linear-gradient(to bottom right, #ff69b4, #9400d3);
+}
+.container{
+    background-color: white;
+    height: 85%;
+    width: 77%;
+    margin: 1%;
+    float: right;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px 7px #555;
+    background-image: linear-gradient(to bottom right, #ff69b4, #9400d3);
+}
+.container embed{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #ff69b4, #9400d3);
+}
+@media screen and (max-width: 650px){
+    .container{
+        width: 90%;
+    }
+}
