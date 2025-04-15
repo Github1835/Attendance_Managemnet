@@ -1,0 +1,109 @@
+.mySlides 
+{display:none}
+.w3-left, .w3-right, .w3-badge
+{cursor:pointer}
+.w3-badge 
+{height:13px;width:13px;padding:0}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    background-color: whitesmoke;
+}
+/* Images css */
+img{
+    width: 100%;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.9), inset 0 0 0px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+.change-event-image
+{
+    width:5%;
+    height:auto;
+    padding: 5px;
+    background-color: rgb(70, 66, 66);
+    border-radius: 5px;
+    color: white;
+    margin-top: 2%;
+}
+.bt1{
+    float: left;
+}
+.bt2{
+    float: right;
+}
+
+.w3-display-container{
+    height: 80%;
+    width: 100%;
+}
+.w3-display-container:hover .w3-display-hover{display:block}
+.w3-display-container:hover span.w3-display-hover{display:inline-block}
+
+/* news css */
+.data1
+{
+    color: rgba(0, 0, 255, 0.712);
+    height:auto;
+    width: auto;
+    margin:4% 4%;
+    font-size:large;
+}
+h1
+{
+    font-size:150%;
+    text-align: center;
+    padding: 2%;
+    font-size:150%;
+    background-color: orangered;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.9), inset 0 0 0px rgba(0, 0, 0, 0.4);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a
+{
+	text-decoration:none;
+}
+
+/* news table css */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 80%;
+    border: 1px solid #ddd;
+    margin: 5%;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.9), inset 0 0 0px rgba(0, 0, 0, 0.4);
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 5px;
+  }
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .change-event-image
+    {
+        width:10%;
+        height:auto;
+        background-color: rgb(70, 66, 66);
+        border-radius: 5px;
+        color: white;
+        margin-top: 5%;
+    }
+
+    .w3-display-container{
+        height: 30%;
+        width: auto;
+    }
+    .w3-display-container:hover .w3-display-hover{display:block}
+    .w3-display-container:hover span.w3-display-hover{display:inline-block}
+
+}

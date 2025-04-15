@@ -1,0 +1,126 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    background-color: whitesmoke;
+}
+.cname{
+    margin-top: 5%;
+}
+
+/* student data section */
+.studentdata{
+    height: auto;
+    width: 100%;
+}
+
+/* Attendaance */
+.attendance{
+    float: left;
+    height:45%;
+    width: 45%;
+    margin: 0% 2%;
+}
+
+/* tab1 */
+.att {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .att button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .att button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .att button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .attcontent {
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+embed{
+    height: 44%;
+    width: 44%;
+}
+
+/* chart section */
+.chart{
+    float: right;
+    height:45%;
+    width: 45%;
+    margin: 0% 2%;
+}
+.attchar {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .attchar button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .attchar button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .attchar button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .chartcontent {
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+@media screen and (max-width:600px){
+    .attendance{
+        height:50%;
+        width:100%;
+        margin: 0%;
+    }
+    
+    .chart{
+        height: 50%;
+        width: 100%;
+        margin: 0%;
+    }
+
+    .cname{
+        margin-top: 13%;
+    }
+}

@@ -1,0 +1,237 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/StudentHome.css">
+    <link rel="stylesheet" href="css/Contact.css">
+    <link rel="stylesheet" href="Menu/Menu.css">
+    <link rel="stylesheet" href="Menu/Footer.css">
+    <title>
+        BBIT Student Home
+    </title>
+</head>
+
+<body>
+
+    <!-- Code for Navigation Menu -->
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="php/StudentNews.php">News</a>
+        <a href="php/search.php">Search Attendance</a>
+        <a href="StudentLogin.html">Student Login</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <!-- Navigation Menu's code ends -->
+
+    <hr>
+
+    <!-- Header section For home galary-->
+    <header>
+        <div class="cname">
+            <center><br>
+                <h1>BBIT</h1>
+            </center>
+        </div>
+    </header>
+    <hr>
+    <!--End of Header section-->
+
+    <!-- Home Section Code -->
+
+    <div class="w3-content" style="max-width:1200px" id="home">
+        <center>
+            <img class="ImgHome" src="Images/HomeImages/Screenshot (4).png" style="width:90%;display:none">
+            <img class="ImgHome" src="Images/HomeImages/Screenshot (6).png" style="width:90%;">
+            <img class="ImgHome" src="Images/HomeImages/Screenshot (5).png" style="width:90%;display:none">
+        </center>
+
+        <center>
+            <div class="w3-row-padding">
+                <img src="Images/HomeImages/Screenshot (4).png" style="width:30%;cursor:pointer"
+                    onclick="currentDiv(1)">
+                <img src="Images/HomeImages/Screenshot (6).png" style="width:30%;cursor:pointer"
+                    onclick="currentDiv(2)">
+                <img src="Images/HomeImages/Screenshot (5).png" style="width:30%;cursor:pointer"
+                    onclick="currentDiv(3)">
+            </div>
+        </center>
+    </div>
+
+    <script>
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("ImgHome");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-opacity-off";
+        }
+    </script>
+    <!-- End of Home Section -->
+
+    <hr>
+
+    <!-- About section code -->
+
+    <!-- Header section for abouot section-->
+    <div class="none" id="about">
+        <center>
+            <h1>About</h1>
+        </center>
+    </div>
+    <hr>
+    <!-- End of Header Section -->
+
+    <div class="AboutSection">
+
+        <div class="images">
+            <img class="ImgAbout" src="Images/HomeImages/About1.jpg">
+            <img class="ImgAbout" src="Images/HomeImages/About2.jpg">
+            <img class="ImgAbout" src="Images/HomeImages/About1.jpg">
+            <img class="ImgAbout" src="Images/HomeImages/About2.jpg">
+        </div>
+
+        <div class="data2">
+            <h2>
+                <center>B & B Institute of technology</center>
+            </h2>
+            <p>
+                Bhailalbhai & Bhikhabhai Institute of Technology (Polytechnic) is a grant-in-aid and Self Financed
+                Polytechnic managed by Charutar Vidya Mandal,
+                Vallabh Vidyanagar. The institute was established in August 1958 with the intake capacity of 60 each in
+                conventional programmes like Civil,
+                Mechanical & Electrical Engg. The institute has also started two programmes under Self Finance pattern;
+                in the year 2001, it has started Diploma
+                in Information Technology with 60 intake and in 2003, Diploma in Electronics & Communication with 60
+                intake.
+            </p>
+        </div>
+
+        <div id="p">
+            <div id="p-massa">
+                <h4>PRINCIPAL's MESSAGE</h4>
+                <p>
+                    I am proud of being the Principal of such a wonderful institution dedicated to the causes of better
+                    India. Through education and their real empowerment, come on let's give our best and make this
+                    Institution a morden temple of learning through our diligence, devotion and dedication. Our
+                    management believes that apart from imparting education, we should look towards overall development
+                    of the students so that they are capable of taking the global challenges in whatever field they opt
+                    for. As a part of this, we carry out various students activities like- Project Club, Organizing
+                    Technical Events, Campus Placement, Sports Activity etc.
+                </p>
+            </div>
+            <br>
+            <center>
+                <div id="p-img">
+                    <h4>Dr. K. M. MAKWANA</h4>
+                    <img src="Images/HomeImages/Screenshot (45).png">
+                </div>
+            </center>
+        </div>
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("ImgAbout");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2500);
+        }
+    </script>
+    <!-- End of About Section -->
+
+    <hr>
+    
+    <!-- Contact us section code -->
+    <div class="ContactUs" id="contact">
+        <center>
+            <form action="php/Contact.php" method="POST">
+                <div class="container">
+                    <div class="row">
+                        <h1>contact us</h1>
+                    </div>
+                    <div class="row input-container">
+                        <div class="col-xs-12">
+                            <div class="styled-input wide">
+                                <input type="text" required placeholder="Name" />
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="styled-input">
+                                <input type="email" required placeholder="Email" />
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="styled-input" style="float:right;">
+                                <input type="text" required placeholder="Phone Number" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="styled-input wide">
+                                <textarea required placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <inupt type="submit" value="Send Message">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </center>
+    </div>
+    <!-- End of Contact us section -->
+
+    <!-- Footer section code -->
+    <div id="footer" class="uni-padding">
+        <div id="add" class="column">
+            <h3>CONTACT US</h3>
+            <ul>
+                <li>Bhailalbhai & Bhikhabhai Institute of Technology (BBIT - Polytechnic), Charutar Vidya Mandal,
+                    Vallabh Vidyanagar.</li>
+                <br>
+                <li><b>Address</b> : Nr. Iscon Temple, Opp. Shastri Medan, Vallabh Vidya Nagar, Anand, Gujarat, India.
+                    3881200</li>
+                <li><b>Phone</b> : 02692 - 237240</li>
+                <li><b>Email</b> : principal@bbit.ac.in</li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- Footer section end -->
+</body>
+
+</html>

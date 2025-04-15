@@ -1,0 +1,66 @@
+<!DOCTYPE Html>
+<Html>
+
+<Head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <Title>Student Login</Title>
+    <Link Rel="Stylesheet" Href="css/StudentLogin.css" />
+    <link rel="stylesheet" href="Menu/Menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</Head>
+
+<Body>
+
+    <!-- Code for Navigation Menu -->
+
+    <div class="topnav" id="myTopnav">
+        <a href="#studenlogin" class="active">Student Login</a>
+        <a href="StudentHome.html">Home</a>
+        <a href="php/StudentNews.php">News</a>
+        <a href="php/search.php">Search Attendance</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <!-- Navigation Menu's code ends -->
+
+    <!-- Login Form Code -->
+    <Div Class="Center">
+        <Div Class="Container">
+            <Div Class="Text">Login Form</Div>
+            <Form Action="php/sessionlogin2.php" method="POST">
+                <Div Class="Data">
+                    <Label>Enrollment Number</Label>
+                    <Input Type="Text" Required name="eno" placeholder="Enrollment Number" />
+                </Div>
+                <Div Class="Data">
+                    <Label>Password</Label>
+                    <Input Type="Password" Required name="stupass" placeholder="Password" />
+                </Div>
+                <div class="Signup-Link">
+                    <a href="Login/ForgotPassword.php">Forgot Password?</a>
+                </div>
+                <Div Class="Btn">
+                    <Div Class="Inner"></Div>
+                    <Button Type="Submit">Login</Button>
+                </Div>
+                <div class="Signup-Link">
+                    Don't have account??<a href="Signup.html">Sign up</a>
+                </div>
+            </Form>
+        </Div>
+    </Div>
+    <!-- Login form code Ends -->
+</Body>
+
+</Html>

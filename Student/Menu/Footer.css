@@ -1,0 +1,44 @@
+/* Footer */
+
+#footer{
+    background-color: #323a45;
+    box-sizing: border-box;
+    width: 100%;
+    display: inline-block;
+    padding: 40px 70px 25px 70px;
+    margin-bottom: 0px;
+    color: white;
+}
+.column{
+    float: left;
+    padding: 0px 2.5%;
+}
+.column ul{
+   list-style: none;
+   padding-left: 0px;
+}
+.column h3{
+   padding-bottom: 8px;
+   border-bottom: 1px blue solid;
+   font-size: 20px;
+}
+.column ul{
+   line-height: 1.8;
+}
+#add li
+{
+    font-size: 15px;    
+}
+
+/* Responsive */
+@media screen and (max-width: 600px)
+{
+     /* Footer */
+
+     #footer{
+        background-color: #323a45;
+        width: auto;
+        padding: 2%;
+        color: white;
+    }
+}
